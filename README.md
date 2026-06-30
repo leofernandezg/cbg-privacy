@@ -23,6 +23,7 @@ This repo is **PUBLIC**. **NEVER** commit anything other than the public files a
 grep -rniE "api[_-]?key|secret|token|password|private[_-]?key|firebase.*config|google-services|\.plist|cozy-block-garden-dev|service.account|bearer|/Users/" . --exclude-dir=.git
 git status --porcelain   # only the 4 public files should ever appear
 ```
-The privacy-policy text is **maintained** in the private `cbg-infra` repo
-(`codebase/cbg-infra/web/privacy-policy.html`) and **copied** here for hosting — edit it there, then
-re-copy. Keep the two in sync.
+The privacy-policy text is **maintained** in the sibling private repo
+(`../cbg-infra/web/privacy-policy.html`) and **copied** here for hosting — edit it there, then re-copy.
+Keep the two in sync. (This repo is CBG-specific and lives at `codebase/cbg-privacy/` next to the other
+`cbg-*` repos; future games get their own subdomain + their own public repo.)
